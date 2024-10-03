@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+       @import url(https://fonts.google.com/specimen/Fraunces);
+        
+        body{
+            background-color: #f2ebe3;
+        }
+        .contanier img{
+            height: 600px;
+        }
+        .contanier{
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+            margin-left: 0px;
+            
+        }
+        @media(max-width: 500px){
+            .contanier{
+                flex-direction: column;
+            }
+        }
+  
+        .informacoes{
+            background-color: white;
+            width: 400px;
+            
+        }
+        .informacoes h2{
+            text-align: left;
+            margin-left: 40px;
+            margin-top: 30px;
+            opacity: 20%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .informacoes h1{
+            font-size: 50px;
+            margin-left: 40px;
+        }
+        .informacoes p{
+            margin-left: 14px;
+            margin-left: 40px;
+        }
+
+        .fundo{
+            display: flex;
+            align-items: center;
+            
+        }
+        
+        button{
+            width: 300px;
+            height: 50px;
+            font-size: 30px;
+           margin-left: 50px;
+           background-color: #3c8067;
+           border-radius: 10px;
+           color: white;
+           height: 70px;
+           border: 1px #3c8067 solid;
+           cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #144d38;
+        }
+        .preco{
+            color: #3c8067;
+            font-family: "Fraunces", serif;
+        }
+            
+        
+    </style>
+    <div class="contanier">
+        <img src="image-product-desktop.jpg" alt="foto">
+        <div class="informacoes">
+            <h2>P e r f u m e</h2>
+            <h1>Gabrielly <br> Essence Eau <br> De perfum</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing  Aperiam consequuntur rem amet illo totam earum dolores velit fuga error sit nihil quas odit, aliquid voluptatibus optio facere animi. Quos, magnam.</p>
+            <span class="fundo">
+            <h1 class="preco">$149.99</h1>
+            <p style="text-decoration: line-through">$169.00</p>
+            </span>
+           <button type="submit">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
